@@ -3,6 +3,7 @@ import { GuidanceCard } from '../maps/GuidanceCard'
 import { useCabin } from '../state/store'
 import { useMapGrown } from './idle'
 import { MapView } from './MapView'
+import { TripComputer } from './TripComputer'
 import { useAnyWidget } from './widgetState'
 import { DestinationWidget, NowPlayingWidget, WeatherWidget } from './widgets'
 import './dashboard.css'
@@ -42,6 +43,7 @@ export function Dashboard() {
         <NowPlayingWidget />
         <DestinationWidget />
         <WeatherWidget />
+        <TripComputer />
       </div>
     </section>
   )
